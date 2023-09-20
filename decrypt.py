@@ -23,7 +23,7 @@ if user_phase == secretphrase:
       contents = thefile.read()
     contents_decrypted = Fernet(secretkey).decrypt(contents)
     with open(file,'wb') as thefile:
-      thefie.write(contents_decrypted)
+      thefile.write(contents_decrypted)
     print("Your files are decrypted..!")
     
 else:
