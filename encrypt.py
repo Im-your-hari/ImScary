@@ -6,7 +6,7 @@ from cryptography.fornet import Fornet
 
 files = []
 for file in os.listdir():
-  if file == 'main.py' or file == 'encrypt.py' or file == "key.key":
+  if file == 'decrypt.py' or file == 'encrypt.py' or file == "key.key":
     continue
   if os.path.isfile(file):
     files.append(file)
