@@ -2,7 +2,7 @@
 # secretphrase = "its_hari"
 
 import os
-from cryptography.fornet import Fornet
+from cryptography.fernet import Fernet
 
 files = []
 for file in os.listdir():
@@ -13,7 +13,8 @@ for file in os.listdir():
 
 print(files)
 
-key = Fornet.generate_key()
+key = Fernet.generate_key()
 
 with open('key.key','wb') as thekey:
   thekey.write(key)
+
